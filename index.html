@@ -27,7 +27,7 @@ p{margin: 30px;}
   <p>With ❤️ for JT</p>
   
   <input id="color-picker" value='#276cb8' />
-	
+	<p>Integer: <span id="integer-value"></span></p>
 	<script>
 $('#color-picker').spectrum({
   type: "flat",
@@ -44,6 +44,7 @@ if ((a & 0x8000000) > 0) {
    a = a - 0x100000000;
 }
 console.log(a);
+		$('#integer-value').html(a);
 }
 });
   </script>
