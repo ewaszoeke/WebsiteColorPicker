@@ -8,15 +8,7 @@
 			  crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
-<script>
-  $('#color-picker').spectrum({
-  type: "flat",
-  showInput: "true",
-  showInitial: "true",
-  showAlpha: "false",
-  allowEmpty: "false"
-});
-  </script>
+
 	<style>
 		* {
   font-family: sans-serif
@@ -27,5 +19,15 @@
   <p>With ❤️ for JT.</p>
   
   <input id="color-picker" value='#276cb8' />
+	
+	<script>
+  $('#color-picker').spectrum({
+  type: "flat",
+  showInput: "true",
+  showInitial: "true",
+  showAlpha: "false",
+  allowEmpty: "false"
+});
+  </script>
 </body>
 </html>
