@@ -12,7 +12,7 @@
 	<style>
 
 		* {
-  font-family: sans-serif
+  font-family: monospace
 }
 
 body {
@@ -39,7 +39,7 @@ $(window).on("load", function() {
           allowEmpty: false,
 	move: function(color) {
 	    a = color.toHexString();
-	    a = a.replace("#", "0xFF");
+	    a = a.replace("#", "0xff");
 	    console.log(a);
 		$('#hex-value').html(a);
 	    a = parseInt(a, 16);
