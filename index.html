@@ -29,6 +29,7 @@ p{margin: 30px;}
   <input id="color-picker" value='#276cb8' />
 	<p>Integer: <span id="integer-value"></span></p>
 	<script>
+		$( window ).on( "load", function() {
 $('#color-picker').spectrum({
   type: "flat",
   showInput: "true",
@@ -47,6 +48,7 @@ console.log(a);
 		$('#integer-value').html(a);
 }
 });
+		});
   </script>
 </body>
 </html>
