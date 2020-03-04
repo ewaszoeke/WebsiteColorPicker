@@ -27,6 +27,7 @@ p{margin: 30px;}
   <p>With ❤️ for JT</p>
   
   <input id="color-picker" value='#276cb8' />
+	<p id="color-box" style="height: 40px; width: 40px;margin: 20px auto;"></p>
 	<p>Hex: <span id="hex-value"></span></p>
 <p>Integer: <span id="integer-value"></span></p>
 <script>
@@ -39,6 +40,7 @@ $(window).on("load", function() {
           allowEmpty: false,
 	move: function(color) {
 	    a = color.toHexString();
+		$('#color-box').css("background-color", a);
 	    a = a.replace("#", "0xff");
 	    console.log(a);
 		$('#hex-value').html(a);
