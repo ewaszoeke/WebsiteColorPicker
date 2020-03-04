@@ -10,13 +10,21 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
 
 	<style>
+
 		* {
   font-family: sans-serif
 }
+
+body {
+	padding: 10px;
+	text-align: center;
+		background: pink;
+}
+p{margin: 30px;}
 	</style>
 </head>
 <body>
-  <p>With ❤️ for JT.</p>
+  <p>With ❤️ for JT</p>
   
   <input id="color-picker" value='#276cb8' />
 	
@@ -26,7 +34,10 @@ $('#color-picker').spectrum({
   showInput: "true",
   showAlpha: "false",
   showButtons: "false",
-  allowEmpty: "false"
+  allowEmpty: "false",
+	move: function(color) {
+    Console.log(color.toHexString()); // #ff0000
+}
 });
   </script>
 </body>
