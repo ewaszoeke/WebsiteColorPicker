@@ -27,28 +27,24 @@ p{margin: 30px;}
   <p>With ❤️ for JT</p>
   
   <input id="color-picker" value='#276cb8' />
-	<p>Integer: <span id="integer-value"></span></p>
-	<script>
-		$( window ).on( "load", function() {
-$('#color-picker').spectrum({
-  type: "flat",
-  showInput: "true",
-  showAlpha: "false",
-  showButtons: "false",
-  allowEmpty: "false",
+<p>Integer: <span id="integer-value"></span></p>
+<script>
+$(window).on("load", function() {
+    $('#color-picker').spectrum({
+	type: "flat",
 	move: function(color) {
-    a = color.toHexString();
-a = a.replace("#", "0xFF");
-console.log(a);
-a = parseInt(a, 16);
-if ((a & 0x8000000) > 0) {
-   a = a - 0x100000000;
-}
-console.log(a);
-		$('#integer-value').html(a);
-}
+	    a = color.toHexString();
+	    a = a.replace("#", "0xFF");
+	    console.log(a);
+	    a = parseInt(a, 16);
+	    if ((a & 0x8000000) > 0) {
+		a = a - 0x100000000;
+	    }
+	    console.log(a);
+	    $('#integer-value').html(a);
+	}
+    });
 });
-		});
   </script>
 </body>
 </html>
