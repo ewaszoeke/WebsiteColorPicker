@@ -2,9 +2,17 @@
 <html>
 <head>
 <title>ColorPicker</title>
-  <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js">
+<script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
-
+<script>
+  $('#color-picker').spectrum({
+  type: "flat",
+  showInput: "true",
+  showInitial: "true",
+  showAlpha: "false",
+  allowEmpty: "false"
+});
+  </script>
 </head>
 <body>
   <p>With ❤️ for JT.</p>
